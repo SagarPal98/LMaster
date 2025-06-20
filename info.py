@@ -76,8 +76,8 @@ SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "")
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "")
 
-TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "1200"))
-THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "54000"))
+TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "600"))
+THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "600"))
 
 MOVIE_UPDATE_NOTIFICATION = bool(environ.get("MOVIE_UPDATE_NOTIFICATION", False))
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
@@ -103,7 +103,7 @@ FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), True)
 PM_SEARCH = bool(environ.get('PM_SEARCH', True)) 
-EMOJI_MODE = bool(environ.get('EMOJI_MODE', False)) 
+EMOJI_MODE = bool(environ.get('EMOJI_MODE', True)) 
 PAID_STREAM = bool(environ.get('PAID_STREAM', False)) 
 
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
