@@ -370,8 +370,7 @@ async def start(client, message):
     )
     k = await msg.reply(
         f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\n"
-        f"<b>♻️ ᴛʜɪꜱ ꜰɪʟᴇ ᴡɪʟʟ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀꜰᴛᴇʀ {get_time(DELETE_TIME)}</b>"</code></u> 🫥 <i></b>"
-        "(ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ)</i>.\n\n"
+        f"<b>♻️ ᴛʜɪꜱ ꜰɪʟᴇ ᴡɪʟʟ ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ᴀꜰᴛᴇʀ {get_time(DELETE_TIME)}</b>"
         "<b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ ᴀɴᴅ ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ</i></b>",
         quote=True
     )     
@@ -933,19 +932,11 @@ async def all_settings(client, message):
 <b>ɴᴀᴍᴇ</b> - <code>{settings["shortner_two"]}</code>
 <b>ᴀᴘɪ</b> - <code>{settings["api_two"]}</code>
 
-✅️ <b><u>𝟹ʀᴅ ᴠᴇʀɪꜰʏ sʜᴏʀᴛɴᴇʀ</u></b>
-<b>ɴᴀᴍᴇ</b> - <code>{settings["shortner_three"]}</code>
-<b>ᴀᴘɪ</b> - <code>{settings["api_three"]}</code>
-
 ⏰ <b>2ɴᴅ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ᴛɪᴍᴇ</b> - <code>{settings["verify_time"]}</code>
-
-⏰ <b>𝟹ʀᴅ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ᴛɪᴍᴇ</b> - <code>{settings['third_verify_time']}</code>
 
 1️⃣ <b>ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ 1</b> - {settings['tutorial']}
 
 2️⃣ <b>ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ 2</b> - {settings.get('tutorial_2', TUTORIAL_2)}
-
-3️⃣ <b>ᴛᴜᴛᴏʀɪᴀʟ ʟɪɴᴋ 3</b> - {settings.get('tutorial_3', TUTORIAL_3)}
 
 📝 <b>ʟᴏɢ ᴄʜᴀɴɴᴇʟ ɪᴅ</b> - <code>{settings['log']}</code>
 
