@@ -1553,7 +1553,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await save_group_settings(int(grp_id), f'api{suffix}', key_msg.text)
         log_message = f"#New_Shortner_Set\n\n ꜱʜᴏʀᴛɴᴇʀ ɴᴏ - {shortner_num}\nɢʀᴏᴜᴘ ʟɪɴᴋ - `{invite_link}`\n\nɢʀᴏᴜᴘ ɪᴅ : `{grp_id}`\nᴀᴅᴅᴇᴅ ʙʏ - `{user_id}`\nꜱʜᴏʀᴛɴᴇʀ ꜱɪᴛᴇ - {url_msg.text}\nꜱʜᴏʀᴛɴᴇʀ ᴀᴘɪ - `{key_msg.text}`"
         await client.send_message(LOG_API_CHANNEL, log_message, disable_web_page_preview=True)
-        next_shortner = int(shortner_num) + 1 if shortner_num in ["1", "2"] else None
+        next_shortner = int(shortner_num) + 1 if shortner_num in ["1"] else None
         btn = [
             [InlineKeyboardButton(f'ꜱʜᴏʀᴛɴᴇʀ {next_shortner}', callback_data=f'set_verify{next_shortner}#{grp_id}')] if next_shortner else [],
             [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data=f'verification_setgs#{grp_id}')]
@@ -1605,7 +1605,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await save_group_settings(int(grp_id), f'{suffix}verify_time', time_msg.text)
         log_message = f"#New_Time_Set\n\n ᴛɪᴍᴇ ɴᴏ - {time_num}\nɢʀᴏᴜᴘ ʟɪɴᴋ - `{invite_link}`\n\nɢʀᴏᴜᴘ ɪᴅ : `{grp_id}`\nᴀᴅᴅᴇᴅ ʙʏ - `{user_id}`\nᴛɪᴍᴇ - {time_msg.text}"
         await client.send_message(LOG_API_CHANNEL, log_message, disable_web_page_preview=True)
-        next_time = int(time_num) + 1 if time_num in ["2"] else None
+        next_time = int(time_num) + 1 if time_num in ["1"] else None
         btn = [
             [InlineKeyboardButton(f'{next_time} ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ᴛɪᴍᴇ', callback_data=f'set_time{next_time}#{grp_id}')] if next_time else [],
             [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data=f'verification_setgs#{grp_id}')]
@@ -1654,7 +1654,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await save_group_settings(int(grp_id), f'tutorial{suffix}', tutorial_msg.text)
         log_message = f"#New_Tutorial_Set\n\n ᴛᴜᴛᴏʀɪᴀʟ ɴᴏ - {tutorial_num}\nɢʀᴏᴜᴘ ʟɪɴᴋ - `{invite_link}`\n\nɢʀᴏᴜᴘ ɪᴅ : `{grp_id}`\nᴀᴅᴅᴇᴅ ʙʏ - `{user_id}`\nᴛᴜᴛᴏʀɪᴀʟ - {tutorial_msg.text}"
         await client.send_message(LOG_API_CHANNEL, log_message, disable_web_page_preview=True)
-        next_tutorial = int(tutorial_num) + 1 if tutorial_num in ["1", "2"] else None
+        next_tutorial = int(tutorial_num) + 1 if tutorial_num in ["1"] else None
         btn = [
             [InlineKeyboardButton(f'ᴛᴜᴛᴏʀɪᴀʟ {next_tutorial}', callback_data=f'set_tutorial{next_tutorial}#{grp_id}')] if next_tutorial else [],
             [InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data=f'verification_setgs#{grp_id}')]
