@@ -230,7 +230,7 @@ async def start(client, message):
                     InlineKeyboardButton(text="✅ ᴠᴇʀɪꜰʏ ✅", url=verify),
                     InlineKeyboardButton(text="⁉️ʜᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ⁉️", url=howtodownload)
                 ],[
-                InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='buy'),
+                InlineKeyboardButton(text="😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ɴᴏ ɴᴇᴇᴅ ᴛᴏ ᴠᴇʀɪғʏ 😁", callback_data='premium'),
             ]]
                 reply_markup=InlineKeyboardMarkup(buttons)
                 if await db.user_verified(user_id): 
